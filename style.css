@@ -1,0 +1,304 @@
+body{
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+ /*------------ Total container----------- */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+    gap: 20px;
+    /* background-color: blue; */
+    height: 100vh;
+    
+}
+
+/* --------left-container-------------- */
+.left-container{
+    /* border: 2px solid red; */
+    background-color: #fff;
+}
+.logo-container{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+    align-items: center;
+
+}
+
+.logo-container img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.side-menu{
+    display: flex;
+    flex-flow: column wrap;
+   /* border: 2px solid blue; */
+   row-gap: 18px;
+    margin-top: 20px;
+    height: 230px;
+    padding-left: 25px;
+    
+}
+
+.side-menu a{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 30px;
+    text-decoration: none;
+    color: #9DA6BA;
+
+    /* font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+/* 2nd text color */
+
+
+    
+}
+
+.side-menu a .text{
+   
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+/* 2nd text color */
+
+color: #9DA6BA;
+}
+
+/* .right-container{
+    border: 2px solid red;
+
+} */
+
+.nav-container{
+    display: flex;
+    flex-flow: row wrap;
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.nav-container h2{
+    padding-left: 25px;
+    
+}
+ 
+.search{
+    border: none;
+    border-radius: 20px;
+    padding: 9px;
+   
+    position: absolute;
+    top: 23px;
+    right: 420px;
+}
+.search:focus{
+    outline: none;
+}
+.search-icon{
+    
+    background-color: #5B68FF;
+    border-radius: 50%;
+    position:absolute;
+    right: 420px;
+    top: 23px;
+    padding: 4px;
+}
+
+.nav-user{
+    display: flex;
+    flex-flow: row wrap;
+    
+
+    column-gap: 15px;
+    /* padding-left: 10px;
+    padding-top: 10px; */
+    
+    align-items: center;
+
+     margin: 0;
+    position: absolute;
+    top: 8px;
+    right: 240px; 
+}  
+
+ .nav-user img{
+    
+    
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    
+} 
+
+.notific{
+    position: relative;
+    top: 20px;
+    right: 30px;
+
+}
+
+.icons-container{
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.box1{
+    display: flex;
+    padding-left: 25px;
+    column-gap: 7px;
+}
+.box2{
+    display: flex;
+    flex-flow: row wrap; 
+    column-gap: 7px;
+    padding-right: 28px;
+    
+}
+
+.menu{
+    color: #6F767E;
+    
+}
+
+.widgets, .filter{
+    background-color: #4DC591;
+    color: white;
+    padding: 3px ;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+.filter, .menu{
+    color: #9DA6BA;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+#dropdown{
+    border: none;
+    color: #9DA6BA;
+    border-radius: 10px;
+}
+#dropdown:focus{
+    outline: none;
+}
+
+.card-container{
+
+    margin-top: 50px;
+    width: 250px;
+    height: 255px;
+    background-color: #fff;
+    
+    margin-left: 20px;
+    border-radius: 15px;
+   
+}
+
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    
+    
+}
+
+.card .two-icons{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.card .two-icons img{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+}
+
+ .card .card-user img{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+} 
+
+.two-icons{
+    padding-top: 20px;
+    padding-left: 17px;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 140px;
+    align-items: center;
+}
+
+.card-user{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 12px;
+    align-items: center;
+    padding-left: 17px;
+    
+}
+
+
+.card-user h4{
+    color: #8696b8;
+    font-weight: 400;
+}
+.card .text{
+    padding-top: 20px;
+    padding-left: 19px;
+    font-size: 19px;
+    
+    
+}
+
+.extra-text{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: #8696b8;
+    column-gap: 8px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.custom{
+    color: #5B68FF;
+}
+
+.progress{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 8px;
+    padding-left: 15px;
+    column-gap: 8px;
+}
+
+.check{
+    color: #4DC591;
+}
+
+.test{
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 40px;
+}
